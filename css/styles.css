@@ -10323,3 +10323,21 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 2, ../scss/_style.scss */
+header {
+  background-color: #333;
+}
+/* line 6, ../scss/_style.scss */
+header h1 {
+  color: #fff;
+}
+
+/* line 12, ../scss/_style.scss */
+main {
+  margin: 2em 0;
+}
+/* line 15, ../scss/_style.scss */
+main p {
+  font-size: 2em;
+  color: #666;
+}

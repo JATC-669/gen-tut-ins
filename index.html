@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation 5.4.5</title>
+    <title>JATC Proctor Assignment</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -12,21 +12,27 @@
     <header>
       <div class="row">
         <div class="small-8 small-centered columns ">
-          <h1>Proctor assigment</h1>
+          <h1>JATC669 Proctor Assignment</h1>
         </div>
       </div>
     </header>
     
     <main>
       <div class="row">
-        <form class="small-8 small-centered columns ">
+        <div class="small-6 small-centered columns">
+          <p>Enter an apprentice's zip code.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <form class="small-6 small-centered columns ">
           <input id="aprenZip" type="number" placeholder="Enter a 5 digit zip code">
-          <button onclick="render()">CLICK</button>
+          <button class="expand" onclick="render()">CLICK</button>
         </form>
       </div>
 
       <div class="row">
-        <div class="small-8 small-centered columns">
+        <div class="small-6 small-centered columns">
           <h2 id="proctor"></h2>
         </div>
       </div>
@@ -53,12 +59,11 @@
 
               if (
 
-                /* Section 1: Manuel Barajas */
+                /* Site: 1\nInst: Barajas, Manuel */
 
-                /* 80101 to 80997 */
                    (added >= 180001 && added <= 180047) 
                 || (added >= 180101 && added <= 180166) 
-                || (added >= 180201 && added <= 180329) 
+                || (added >= 180201 && added <= 180329)            
                 || (added >= 180401 && added <= 180553) 
                 || (added >= 180601 && added <= 180654) 
                 || (added >= 180701 && added <= 180705)
@@ -71,53 +76,636 @@
                 || (added >= 180901 && added <= 180997)
                 )
               {
-                alert('Class Group: #2, J. NAME NAME');
+                alert('Site: 1\nInst: Barajas, Manuel');
               }
 
               else if (
 
-                /* Section 2: J. Brian Payne */
+                /* Site: 2\nInst: Payne, J. Brian */
 
-                /* 17201 to 17415 */
-                   (added >= 180001 && added <= 180047) 
-                || (added >= 117201 && added <= 117272) 
-                || (added >= 117301 && added <= 117375) 
-                || (added >= 117401 && added <= 117415) 
-
-                /* 20000 to 21869 */
-                || (added >= 120000 && added <= 121499) 
+                   (added >= 117201 && added <= 117272) 
+                || (added >= 117301 && added <= 117375)
+                || (added >= 117401 && added <= 117415)
+                || (added >= 120000 && added <= 121499)
                 || (added >= 121600 && added <= 121799)
                 || (added >= 121837 && added <= 121869)
-
-                /* 22000 to 25499 */
                 || (added >= 122000 && added <= 122806)
-                || (added >= 125400 && added <= 125499)
+                || (added >= 125400 && added <= 125499)     
                 )
               {
-                alert('Class Group: #2, J. Brian Payne');
+                alert('Site: 2\nInst: Payne, J. Brian');
               }
 
               else if (
 
-                /* Section 2: J. Brian Payne */
+                /* Site: 3\nInst: Williams, James C. */
 
-                /* 17201 to 17415 */
-                   (added >= 180001 && added <= 180047) 
-                || (added >= 117201 && added <= 117272) 
-                || (added >= 117301 && added <= 117375) 
-                || (added >= 117401 && added <= 117415) 
-
-                /* 20000 to 21869 */
-                || (added >= 120000 && added <= 121499) 
-                || (added >= 121600 && added <= 121799)
-                || (added >= 121837 && added <= 121869)
-
-                /* 22000 to 25499 */
-                || (added >= 122000 && added <= 122806)
-                || (added >= 125400 && added <= 125499)
+                   (added >= 175001 && added <= 175497) 
+                || (added >= 175751 && added <= 175790)
+                || (added >= 176001 && added <= 176299)
+                || (added >= 176401 && added <= 176490)
+                || (added >= 176621 && added <= 176799)
                 )
               {
-                alert('Class Group: #2, J. Brian Payne');
+                alert('Site: 3\nInst: Williams, James C.');
+              }
+
+              else if (
+
+                /* Site: 4\nInst: NONE */
+
+                   (added >= 140003 && added <= 140078)
+                || (added >= 140104 && added <= 140468)
+                || (added >= 140502 && added <= 140622)
+                || (added >= 141901 && added <= 141906)
+                || (added >= 142343 && added <= 142378)
+                || (added >= 142539 && added <= 142539)
+                || (added >= 142701 && added <= 142788)
+                || (added >= 147420 && added <= 147470)
+                || (added >= 147513 && added <= 147635)
+                )
+              {
+                alert('Site: 4\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 5\nInst: Hutto, Brian */
+
+                   (added >= 191900 && added <= 192199)
+                )
+              {
+                alert('Site: 5\nInst: Hutto, Brian');
+              }
+
+              else if (
+
+                /* Site: 6\nInst: NONE */
+
+                   (added >= 194300 && added <= 194666)
+                || (added >= 194700 && added <= 194720)
+                || (added >= 194801 && added <= 194850)
+                || (added >= 194901 && added <= 195499)
+                || (added >= 195601 && added <= 195999)
+                )
+              {
+                alert('Site: 6\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 7\nInst: Thomas, Micheal */
+
+                   (added >= 141001 && added <= 141099)
+                || (added >= 143160 && added <= 143160)
+                || (added >= 145001 && added <= 145599)
+                || (added >= 147001 && added <= 147060)
+                )
+              {
+                alert('Site: 7\nInst: Thomas, Micheal');
+              }
+
+              else if (
+
+                /* Site: 8\nInst: Sanchez, Samuel L. */
+
+                   (added >= 177000 && added <= 177899)
+                || (added >= 178900 && added <= 178999)
+                )
+              {
+                alert('Site: 8\nInst: Sanchez, Samuel L.');
+              }
+
+              else if (
+
+                /* Site: 9\nInst: Smith, James 'Shannon' */
+
+                   (added >= 197007 && added <= 197089)
+                || (added >= 197101 && added <= 197149)
+                || (added >= 197201 && added <= 197396)
+                || (added >= 197730 && added <= 197761)
+                || (added >= 198336 && added <= 198356)
+                || (added >= 198522 && added <= 198596)
+                || (added >= 198601 && added <= 198687)
+                )
+              {
+                alert('Site: 9\nInst: Smith, James "Shannon"');
+              }
+
+              else if (
+
+                /* Site: 10\nInst: Fulkerson, Christopher */
+
+                   (added >= 146001 && added <= 146082)
+                || (added >= 146102 && added <= 146186)
+                || (added >= 146201 && added <= 146298)
+                || (added >= 146792 && added <= 146792)
+                || (added >= 146901 && added <= 146998)
+                || (added >= 147201 && added <= 147276)
+                || (added >= 147302 && added <= 147396)
+                || (added >= 147401 && added <= 147490)
+                || (added >= 147801 && added <= 147885)
+                || (added >= 147901 && added <= 147997)
+                )
+              {
+                alert('Site: 10\nInst: Fulkerson, Christopher');
+              }
+
+              else if (
+
+                /* Site: 11\nInst: Boelens, Gary A. */
+
+                   (added >= 185000 && added <= 185399)
+                || (added >= 185500 && added <= 185599)
+                || (added >= 186300 && added <= 186399)
+
+                )
+              {
+                alert('Site: 11\nInst: Boelens, Gary A.');
+              }
+
+              else if (
+
+                /* Site: 12\nInst: NONE */
+
+                   (added >= 182930 && added <= 182931)
+                || (added >= 184003 && added <= 184201)
+                || (added >= 184244 && added <= 184244)
+                || (added >= 184301 && added <= 184341)
+                || (added >= 184401 && added <= 184415)
+                || (added >= 184601 && added <= 184664)
+                )
+              {
+                alert('Site: 12\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 13\nInst: Wilcheck, Jeffery */
+
+                   (added >= 199501 && added <= 199695)
+                )
+              {
+                alert('Site: 13\nInst: Wilcheck, Jeffery');
+              }
+
+              else if (
+
+                /* Site: 14\nInst: Christopherson, Jason */
+
+                   (added >= 176511 && added <= 176574)
+                || (added >= 177900 && added <= 178299)
+                || (added >= 178600 && added <= 178899)
+                )
+              {
+                alert('Site: 14\nInst: Christopherson, Jason');
+              }
+
+              else if (
+
+                /* Site: 15\nInst: Beattie, George H. */
+
+                   (added >= 107209 && added <= 107301)
+                || (added >= 107701 && added <= 108989)
+                || (added >= 117001 && added <= 117375)
+                || (added >= 117501 && added <= 117779)
+                || (added >= 117801 && added <= 117889)
+                || (added >= 117901 && added <= 117985)
+                || (added >= 118001 && added <= 118109)
+                || (added >= 118195 && added <= 118195)
+                || (added >= 118201 && added <= 118256)
+                || (added >= 118301 && added <= 118373)
+                || (added >= 118424 && added <= 118466)
+                || (added >= 118601 && added <= 118661)
+                || (added >= 118701 && added <= 118773)
+                || (added >= 118901 && added <= 119255)
+                || (added >= 119301 && added <= 119567)
+                || (added >= 119601 && added <= 119612)
+                || (added >= 119701 && added <= 119736)
+                || (added >= 119801 && added <= 119980)
+                || (added >= 121901 && added <= 121930)
+                )
+              {
+                alert('Site: 15\nInst: Beattie, George H.');
+              }
+
+              else if (
+
+                /* Site: 16\nInst: Engel, Gary */
+
+                   (added >= 145851 && added <= 145855)
+                || (added >= 145879 && added <= 145880)
+                || (added >= 146301 && added <= 146411)
+                || (added >= 146501 && added <= 146774)
+                || (added >= 146805 && added <= 146805)
+                || (added >= 146808 && added <= 146808)
+                || (added >= 146816 && added <= 146840)
+                || (added >= 149001 && added <= 149130)
+                || (added >= 160401 && added <= 160499)
+                || (added >= 160803 && added <= 160803)
+                || (added >= 160827 && added <= 160827)
+                || (added >= 160901 && added <= 160910)
+                || (added >= 160912 && added <= 160912)
+                || (added >= 160914 && added <= 160915)
+                || (added >= 160931 && added <= 160931)
+                || (added >= 160940 && added <= 160940)
+                || (added >= 160950 && added <= 160950)
+                )
+              {
+                alert('Site: 16\nInst: Engel, Gary');
+              }
+
+              else if (
+
+                /* Site: 17\nInst: Verkuilen, Mark T. */
+
+                   (added >= 149858 && added <= 149858)
+                || (added >= 154101 && added <= 154247)
+                || (added >= 154301 && added <= 154344)
+                || (added >= 154406 && added <= 154499)
+                || (added >= 154901 && added <= 154990)
+                )
+              {
+                alert('Site: 17\nInst: Verkuilen, Mark T.');
+              }
+
+              else if (
+
+                /* Site: 18\nInst: Richards, Bruce M. */
+
+                   (added >= 101200 && added <= 101299)
+                || (added >= 105100 && added <= 105399)
+                || (added >= 112000 && added <= 112499)
+                || (added >= 112800 && added <= 112999)
+                || (added >= 113500 && added <= 113599)
+                )
+              {
+                alert('Site: 18\nInst: Richards, Bruce M.');
+              }
+
+              else if (
+
+                /* Site: 19\nInst: Van Rhyn, Jeffrey */
+
+                   (added >= 189000 && added <= 189199)
+                )
+              {
+                alert('Site: 19\nInst: Van Rhyn, Jeffrey');
+              }
+
+/*  NO 20 */
+
+              else if (
+
+                /* Site: 21\nInst: Engelke, Johhnie */
+
+                   (added >= 151000 && added <= 151199)
+                || (added >= 151401 && added <= 151467)
+                || (added >= 151501 && added <= 151656)
+                || (added >= 166515 && added <= 166515)
+                || (added >= 168000 && added <= 168199)
+                || (added >= 168301 && added <= 168382)
+                || (added >= 168401 && added <= 168465)
+                || (added >= 168501 && added <= 168669)
+                || (added >= 168716 && added <= 168799)
+                || (added >= 168731 && added <= 168731)
+                || (added >= 168733 && added <= 168733)
+                || (added >= 168741 && added <= 168741)
+                || (added >= 168768 && added <= 168779)
+                || (added >= 168788 && added <= 168788)
+                || (added >= 168791 && added <= 168791)
+                )
+              {
+                alert('Site: 21\nInst: Engelke, Johhnie');
+              }
+
+/* NO 22 */
+
+              else if (
+
+                /* Site: 23\nInst: NONE */
+
+                   (added >= 143302 && added <= 143359)
+                || (added >= 143402 && added <= 143469)
+                || (added >= 143501 && added <= 143571)
+                || (added >= 143601 && added <= 143699)
+                || (added >= 148007 && added <= 148288)
+                )
+              {
+                alert('Site: 23\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 24\nInst: Coss, David M. */
+
+                   (added >= 115001 && added <= 115148)
+                || (added >= 115201 && added <= 115380)
+                || (added >= 115412 && added <= 115412)
+                || (added >= 115423 && added <= 115423)
+                || (added >= 115427 && added <= 115427)
+                || (added >= 115432 && added <= 115432)
+                || (added >= 115434 && added <= 115434)
+                || (added >= 115601 && added <= 115698)
+                || (added >= 116001 && added <= 116172)
+                || (added >= 116201 && added <= 116263)
+                || (added >= 116301 && added <= 116388)
+                || (added >= 116401 && added <= 116443)
+                || (added >= 116501 && added <= 116565)
+                || (added >= 126003 && added <= 126070)
+                || (added >= 143901 && added <= 144805)
+                )
+              {
+                alert('Site: 24\nInst: Coss, David M.');
+              }
+
+              else if (
+
+                /* Site: 25\nInst: D&#8217;Iapico */
+
+                   (added >= 150001 && added <= 150174)
+                || (added >= 150201 && added <= 150278)
+                || (added >= 150301 && added <= 150398)
+                || (added >= 150420 && added <= 150479)
+                || (added >= 150501 && added <= 150680)
+                || (added >= 150701 && added <= 150707)
+                || (added >= 150801 && added <= 150864)
+                || (added >= 150936 && added <= 150983)
+                || (added >= 152501 && added <= 152595)
+                || (added >= 163535 && added <= 163567)
+                || (added >= 164402 && added <= 164499)
+                || (added >= 164632 && added <= 164679)
+                )
+              {
+                alert("Site: 25\nInst: D'Iapico");
+              }
+
+              else if (
+
+                /* Site: 26\nInst: NONE */
+
+                   (added >= 148301 && added <= 148397)
+                || (added >= 148411 && added <= 148476)
+                || (added >= 148501 && added <= 148559)
+                || (added >= 148601 && added <= 148686)
+                || (added >= 148722 && added <= 148722)
+                || (added >= 148734 && added <= 148787)
+                || (added >= 148801 && added <= 148956)
+                || (added >= 149201 && added <= 149357)
+                || (added >= 149401 && added <= 149468)
+                || (added >= 149501 && added <= 149599)
+                )
+              {
+                alert('Site: 26\nInst: NONE');
+              }
+/* NO 28 */
+              else if (
+
+                /* Site: 29\nInst: Scott, Jody */
+
+                   (added >= 153001 && added <= 153099)
+                || (added >= 153101 && added <= 153295)
+                || (added >= 153401 && added <= 153408)
+                || (added >= 153490 && added <= 153490)
+                || (added >= 153501 && added <= 153599)
+                || (added >= 153701 && added <= 153794)
+                || (added >= 153901 && added <= 153969)
+                || (added >= 160001 && added <= 160209)
+                || (added >= 160301 && added <= 160305)
+                || (added >= 160398 && added <= 160399)
+                || (added >= 160501 && added <= 160514)
+                || (added >= 160601 && added <= 160665)
+                || (added >= 160804 && added <= 160804)
+                || (added >= 161006 && added <= 161089)
+                || (added >= 161101 && added <= 161132)
+                )
+              {
+                alert('Site: 29\nInst: Scott, Jody');
+              }
+
+              else if (
+
+                /* Site: 30\nInst: Slocum, George */
+
+                   (added >= 114000 && added <= 114799)
+                )
+              {
+                alert('Site: 30\nInst: Slocum, George');
+              }
+
+              else if (
+
+                /* Site: 31\nInst: Wilder, Bradly */
+
+                   (added >= 113000 && added <= 113499)
+                || (added >= 113600 && added <= 113999)
+                || (added >= 114800 && added <= 114999)
+                )
+              {
+                alert('Site: 31\nInst: Wilder, Bradly');
+              }
+
+              else if (
+
+                /* Site: 32\nInst: Relyea, Darren J. */
+
+                   (added >= 100501 && added <= 100544)
+                || (added >= 107001 && added <= 107114)
+                || (added >= 107175 && added <= 107208)
+                || (added >= 107302 && added <= 107311)
+                || (added >= 107399 && added <= 107544)
+                || (added >= 107601 && added <= 107677)
+                || (added >= 110000 && added <= 111999)
+                || (added >= 112500 && added <= 112799)
+                )
+              {
+                alert('Site: 32\nInst: Relyea, Darren J.');
+              }
+
+              else if (
+
+                /* Site: 33\nInst: Chaffee, Robert S. */
+
+                   (added >= 190001 && added <= 190099)
+                || (added >= 190189 && added <= 190189)
+                || (added >= 190201 && added <= 190312)
+                || (added >= 190401 && added <= 190411)
+                || (added >= 190501 && added <= 190510)
+                || (added >= 190601 && added <= 190680)
+                || (added >= 190701 && added <= 190755)
+                || (added >= 190801 && added <= 190899)
+                || (added >= 191001 && added <= 191077)
+                || (added >= 191101 && added <= 191226)
+                || (added >= 191301 && added <= 191526)
+                || (added >= 191601 && added <= 191618)
+                || (added >= 191701 && added <= 191793)
+                || (added >= 191801 && added <= 191899)
+                || (added >= 192220 && added <= 192286)
+                || (added >= 192301 && added <= 192427)
+                || (added >= 192501 && added <= 192899)
+                || (added >= 193001 && added <= 193243)
+                || (added >= 193501 && added <= 193599)
+                )
+              {
+                alert('Site: 33\nInst: Chaffee, Robert S.');
+              }
+
+              else if (
+
+                /* Site: 34\nInst: NONE */
+
+                   (added >= 173000 && added <= 173199)
+                || (added >= 173400 && added <= 173899)
+                || (added >= 174000 && added <= 174199)
+                || (added >= 174400 && added <= 174699)
+                || (added >= 174800 && added <= 174899)
+                || (added >= 176300 && added <= 176300)
+                )
+              {
+                alert('Site: 34\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 35\nInst: NONE */
+
+                   (added >= 189400 && added <= 189599)
+                || (added >= 189700 && added <= 189799)
+                || (added >= 194200 && added <= 194299)
+                || (added >= 196100 && added <= 196199)
+                )
+              {
+                alert('Site: 35\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 36\nInst: NONE */
+
+                   (added >= 116611 && added <= 116694)
+                || (added >= 116801 && added <= 116882)
+                )
+              {
+                alert('Site: 36\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 37\nInst: NONE */
+
+                   (added >= 193201 && added <= 193292)
+                || (added >= 193601 && added <= 193675)
+                || (added >= 193701 && added <= 193794)
+                || (added >= 193844 && added <= 193844)
+                || (added >= 193888 && added <= 193888)
+                || (added >= 195043 && added <= 195043)
+                || (added >= 195301 && added <= 195389)
+                )
+              {
+                alert('Site: 37\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 38\nInst: Zurek, Micheal */
+
+                   (added >= 147831 && added <= 147895)
+                || (added >= 160518 && added <= 160599)
+                || (added >= 160951 && added <= 160974)
+                || (added >= 161401 && added <= 161572)
+                || (added >= 161601 && added <= 161656)
+                || (added >= 161701 && added <= 161884)
+                || (added >= 161910 && added <= 161957)
+                || (added >= 162011 && added <= 162094)
+                || (added >= 162319 && added <= 162378)
+                || (added >= 162401 && added <= 162474)
+                || (added >= 162501 && added <= 162573)
+                || (added >= 162601 && added <= 162796)
+                )  
+              {
+                alert('Site: 38\nInst: Zurek, Micheal');
+              }
+
+              else if (
+
+                /* Site: 39\nInst: Langley, Christopher */
+
+                   (added >= 152001 && added <= 152362)
+                || (added >= 152401 && added <= 152499)
+                || (added >= 152601 && added <= 152660)
+                || (added >= 152701 && added <= 152778)
+                || (added >= 152801 && added <= 152809)
+                || (added >= 153802 && added <= 153824)
+                || (added >= 161201 && added <= 161379)
+                )
+              {
+                alert('Site: 39\nInst: Langley, Christopher');
+              }
+
+              else if (
+
+                /* Site: 40\nInst: Malin, David */
+
+                   (added >= 130108 && added <= 130182)
+                || (added >= 130217 && added <= 130219)
+                || (added >= 135004 && added <= 135188)
+                || (added >= 135201 && added <= 135298)
+                || (added >= 135401 && added <= 135594)
+                || (added >= 135901 && added <= 136093)
+                || (added >= 136101 && added <= 136191)
+                || (added >= 136201 && added <= 136280)
+                || (added >= 136701 && added <= 136793)
+                || (added >= 136850 && added <= 136879)
+                || (added >= 138844 && added <= 138848)
+                || (added >= 139702 && added <= 139702)
+                || (added >= 139740 && added <= 139740)
+                || (added >= 139766 && added <= 139766)
+                )
+              {
+                alert('Site: 40\nInst: Malin, David');
+              }
+
+              else if (
+
+                /* Site: 41\nInst: Fitzpatrick, James */
+
+                   (added >= 101001 && added <= 101109)
+                || (added >= 101118 && added <= 101151)
+                || (added >= 101301 && added <= 101475)
+                || (added >= 101701 && added <= 101778)
+                || (added >= 102019 && added <= 102093)
+                || (added >= 102703 && added <= 102726)
+                || (added >= 102760 && added <= 102777)
+                || (added >= 102804 && added <= 102921)
+                || (added >= 103441 && added <= 103441)
+                || (added >= 106000 && added <= 106999)
+                )
+              {
+                alert('Site: 41\nInst: Fitzpatrick, James');
+              }
+
+              else if (
+
+                /* Site: 42\nInst: Vaugn, Kevin */
+
+                   (added >= 130752 && added <= 130752)
+                || (added >= 135602 && added <= 135699)
+                || (added >= 135739 && added <= 135776)
+                || (added >= 135801 && added <= 135899)
+                || (added >= 137010 && added <= 137391)
+                || (added >= 137201 && added <= 137250)
+                || (added >= 137301 && added <= 137398)
+                || (added >= 138201 && added <= 138258)
+                || (added >= 138310 && added <= 138390)
+                || (added >= 138401 && added <= 138488)
+                || (added >= 138501 && added <= 138588)
+                || (added >= 142076 && added <= 142076)
+                || (added >= 142101 && added <= 142170)
+                || (added >= 142202 && added <= 142288)
+                || (added >= 142339 && added <= 142339)
+                )
+              {
+                alert('Site: 42\nInst: Vaugn, Kevin');
               }
 
               else
