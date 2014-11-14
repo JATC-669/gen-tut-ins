@@ -20,25 +20,198 @@
     <main>
       <div class="row">
         <div class="small-6 small-centered columns">
-          <p>Enter an apprentice's zip code.</p>
+          <p>Enter an apprentice's zip code:</p>
         </div>
       </div>
       
       <div class="row">
-        <form class="small-6 small-centered columns ">
+        <form class="small-6 small-centered columns">
           <input id="aprenZip" type="number" placeholder="Enter a 5 digit zip code">
           <button class="expand" onclick="render()">Find Proctor</button>
         </form>
       </div>
+      
+      <div class="row">
+        <div class="small-6 small-centered columns">
+          <p class="text-center">or</hp>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="small-6 small-centered columns">
+          <p>Enter a Tutor/Proctor's Name:</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+      <form class="small-6 small-centered columns">
+        <input id="proctorName" type="text" list="proctors" name="browser">
+        <datalist id="proctors">
+          <option value="Barajas, Manuel">
+          <option value="Payne, J. Brian">
+          <option value="Williams, James C.">
+          <option value="Hutto, Brian">
+          <option value="Thomas, Michael">
+          <option value="Sanchez, Samuel L.">
+          <option value="Smith, James 'Shannon'">
+          <option value="Fulkerson, Christopher">
+          <option value="Boelens, Gary A.">
+          <option value="Wilcheck, Jeffery">
+          <option value="Christopherson, Jason">
+          <option value="Beattie, George H.">
+          <option value="Engel, Gary">
+          <option value="Verkuilen, Mark T.">
+          <option value="Richards, Bruce M.">
+          <option value="Van Rhyn, Jeffrey">
+          <option value="Engelke, Johhnie">
+          <option value="Coss, David M.">
+          <option value="D'Iapico, Anthony">
+          <option value="Holbrook, Kevin">
+          <option value="Scott, Jody">
+          <option value="Slocum, George">
+          <option value="Wilder, Bradly">
+          <option value="Relyea, Darren J.">
+          <option value="Chaffee, Robert S.">
+          <option value="Zurek, Michael">
+          <option value="Langley, Christopher">
+          <option value="Malin, David">
+          <option value="Fitzpatrick, James">
+          <option value="Vaugn, Kevin">
+        </datalist>
+        <button onclick="proctorFind()"class="expand">Get Proctor Info</button>
+      </form>
+
+      <!--
       <div class="row">
         <div class="small-6 small-centered columns">
           <h2 id="proctor"></h2>
         </div>
       </div>
+      -->
 
       <script>
+        var proctorFind = function () {
+          var proctor;
+          proctor = document.getElementById('proctorName').value;
+
+          if (proctor === 'Barajas, Manuel') {
+            alert('SITE: 1\n\nBarajas, Manuel\n\nPO Box 299399\nThornton, CO 80299\n\n303-927-9359');
+          } 
+
+          else if (proctor === 'Payne, J. Brian') {
+            alert('SITE: 2\n\nPayne, J. Brian\n116 Emmitsburg Rd.\nThurmont, MD 21788\n\n204-818-3163');
+          }
+
+          else if (proctor === 'Williams, James C.') {
+            alert('SITE: 3\n\nWilliams, James C.\n2302 N. Beltline Apt. #331\nMesquite, TX 75150\n\n972-524-4079');
+          }
+
+          else if (proctor === 'Hutto, Brian') {
+            alert('SITE: 5\n\nHutto, Brian\n14088 hawick Dr.\nEl Cajon, CA 92021\n\n619-204-8494');
+          }
+
+          else if (proctor === 'Thomas, Michael') {
+            alert('SITE: 7\n\nThomas, Michael\n124 Heiner Heights\nLawrenceburg, IN 47025\n\n516-518-8646');
+          }
+
+          else if (proctor === 'Sanchez, Samuel L.') {
+            alert('SITE: 8\n\nSanchez, Samuel L.\n3106 Thicket Path Way\nKaty, TX 77493\n\n281-573-8658');
+          }
+
+          else if (proctor === 'Smith, James "Shannon"') {
+            alert('SITE: 9\n\nSmith, James "Shannon"\n36501 NE Elliott Rd.\nYacoly, WA 98675\n\n360-247-6039');
+          }
+
+          else if (proctor === 'Fulkerson, Christopher') {
+            alert('SITE: 10\n\nFulkerson, Christopher\n464 W. 900 S. Lot A\nCloverdale, IN 46120\n\n765-719-2295');
+          }
+
+          else if (proctor === 'Boelens, Gary A.') {
+            alert('SITE: 11\n\nBoelens, Gary A.\n1937 E. Lusitano Loop\nSan Tan Valley, AZ 85140\n\n602-799-3968');
+          }
+
+          else if (proctor === 'Wilcheck, Jeffery') {
+            alert('SITE: 13\n\nWilcheck, Jeffery\nPO Box 111291\nAnchorage, AK 9951\n\n907-230-2869');
+          }
+
+          else if (proctor === 'Christopherson, Jason') {
+            alert('SITE: 14\n\nChristopherson, Jason\n1501 lawnmount Dr. #408\nRound Rock, TX 78664\n\n325-660-3647');
+          }
+
+          else if (proctor === 'Beattie, George H.') {
+            alert('SITE: 15\n\nBeattie, George H.\n917 Ridgewood Dr.\nNorthfield, NJ\n\n609-703-6814');
+          }
+
+          else if (proctor === 'Engel, Gary') {
+            alert('SITE: 16\n\nEngel, Gary\n401 Oneida St.\nLa Crosse, IN 46348\n\n219-477-7289');
+          }
+
+          else if (proctor === 'Verkuilen, Mark T.') {
+            alert('SITE: 17\n\nVerkuilen, Mark T.\n1225 E. Pauline St.\nAppleton, WI 54911\n\n920-739-4720');
+          }
+
+          else if (proctor === 'Richards, Bruce M.') {
+            alert('SITE: 18\n\nRichards, Bruce M.\n116 Laural Ln.\nBallston Spa, NY 12020\n\n518-309-4865');
+          }
+
+          else if (proctor === 'Van Rhyn, Jeffrey') {
+            alert('SITE: 19\n\nVan Rhyn, Jeffrey\nPO Box 335129\nLas Vegas, NV 89033\n\n702-429-4097');
+          }
+
+          else if (proctor === 'Engelke, Johhnie') {
+            alert('SITE: 21\n\nEngelke, Johhnie\n16618 Bancroft\nOmaha, NE 68130\n\n832-216-4659');
+          }
+
+          else if (proctor === 'Coss, David M.') {
+            alert('SITE: 24\n\nCoss, David M.\n3564 Western Reserve Rd.\nCanfield, OH 44406\n\n330-549-2782');
+          }
+
+          else if (proctor === 'DIapico, Anthony') {
+            alert('SITE: 25\n\nDIapico, Anthony\n602 S. 6th Ave. W\nNewton, IA 50208\n\n515-321-4679');
+          }
+
+          else if (proctor === 'Holbrook, Kevin') {
+            alert('SITE: 27\n\nHolbrook, Kevin\n8921 Gerich Lilly Rd.\nWest Jefferson, OH 43162\n\n614-595-0736');
+          }
+
+          else if (proctor === 'Scott, Jody') {
+            alert('SITE: 29\n\nScott, Jody\nW4378 County Rd.\nRio, WI 53960\n\n920-992-3828');
+          }
+
+          else if (proctor === 'Slocum, George') {
+            alert('SITE: 30\n\nSlocum, George\n45 Wallace Dr.\nOrchard Park, NY 14127\n\n716-982-1467');
+          }
+          else if (proctor === 'Wilder, Bradly') {
+            alert('SITE: 31\n\nWilder, Bradly\n12 Woodward Rd.\nNew Hartford, NY 13413\n\n315-383-8593');
+          }
+          else if (proctor === 'Relyea, Darren J.') {
+            alert('SITE: 32\n\nRelyea, Darren J.\n4 King Hill Rd.\nWalden, NY 12586\n\n845-546-4739');
+          }
+          else if (proctor === 'Chaffee, Robert S.') {
+            alert('SITE: 33\n\nChaffee, Robert S.\n17385 Grevillea St.\nFontana, CA 92335\n\n909-428-5215');
+          }
+          else if (proctor === 'Zurek, Michael') {
+            alert('SITE: 38\n\nZurek, Michael\n2010 E. Laura Ave.\nWest Peoria, IL 61604\n\n309-678-6524');
+          }
+          else if (proctor === 'Langley, Christopher') {
+            alert('SITE: 39\n\nLangley, Christopher\n16730 E. 200th Street\nOrion, IL 61273\n\n563-529-9119');
+          }
+          else if (proctor === 'Malin, David') {
+            alert('SITE: 40\n\nMalin, David\n948 CR 195\nDanville, AL 35619\n\n256-509-1410');
+          }
+          else if (proctor === 'Fitzpatrick, James') {
+            alert('SITE: 41\n\nFitzpatrick, James\n146 Euclid Ave.\nWaterbury, CT 06710\n\n203-706-0879');
+          }
+          else if (proctor === 'Vaugn, Kevin') {
+            alert('SITE: 42\n\nVaugn, Kevin\n4945 Love Branch Rd.\nHampshire, TN 38461\n\n615-410-5193');
+          }
+        }
+
+
         var render = function () {
+
+
           var zip;
 
           /* Grabs the entered number */
@@ -76,7 +249,7 @@
                 || (added >= 180901 && added <= 180997)
                 )
               {
-                alert('Site: 1\nInst: Barajas, Manuel');
+                alert('SITE: 1\n\nBarajas, Manuel\nPO Box 299399\nThornton, CO 80299\n\n303-927-9359');
               }
 
               else if (
@@ -93,7 +266,7 @@
                 || (added >= 125400 && added <= 125499)     
                 )
               {
-                alert('Site: 2\nInst: Payne, J. Brian');
+                alert('SITE: 2\n\nPayne, J. Brian\n116 Emmitsburg Rd.\nThurmont, MD 21788\n\n204-818-3163');
               }
 
               else if (
@@ -107,7 +280,7 @@
                 || (added >= 176621 && added <= 176799)
                 )
               {
-                alert('Site: 3\nInst: Williams, James C.');
+                alert('SITE: 3\n\nWilliams, James C.\n2302 N. Beltline Apt. #331\nMesquite, TX 75150\n\n972-524-4079');
               }
 
               else if (
@@ -125,7 +298,7 @@
                 || (added >= 147513 && added <= 147635)
                 )
               {
-                alert('Site: 4\nInst: NONE');
+                alert('SITE: 4\n\n\nInst: NONE');
               }
 
               else if (
@@ -135,7 +308,7 @@
                    (added >= 191900 && added <= 192199)
                 )
               {
-                alert('Site: 5\nInst: Hutto, Brian');
+                alert('SITE: 5\n\nHutto, Brian\n14088 hawick Dr.\nEl Cajon, CA 92021\n\n619-204-8494');
               }
 
               else if (
@@ -149,7 +322,7 @@
                 || (added >= 195601 && added <= 195999)
                 )
               {
-                alert('Site: 6\nInst: NONE');
+                alert('SITE: 6\n\nInst: NONE');
               }
 
               else if (
@@ -162,7 +335,7 @@
                 || (added >= 147001 && added <= 147060)
                 )
               {
-                alert('Site: 7\nInst: Thomas, Michael');
+                alert('SITE: 7\nThomas, Michael\n124 Heiner Heights\nLawrenceburg, IN 47025\n\n516-518-8646');
               }
 
               else if (
@@ -173,7 +346,7 @@
                 || (added >= 178900 && added <= 178999)
                 )
               {
-                alert('Site: 8\nInst: Sanchez, Samuel L.');
+                alert('SITE: 8\n\nSanchez, Samuel L.\n3106 Thicket Path Way\nKaty, TX 77493\n\n281-573-8658');
               }
 
               else if (
@@ -189,7 +362,7 @@
                 || (added >= 198601 && added <= 198687)
                 )
               {
-                alert('Site: 9\nInst: Smith, James "Shannon"');
+                alert('SITE: 9\n\nSmith, James "Shannon"\n36501 NE Elliott Rd.\nYacoly, WA 98675\n\n360-247-6039');
               }
 
               else if (
@@ -208,7 +381,7 @@
                 || (added >= 147901 && added <= 147997)
                 )
               {
-                alert('Site: 10\nInst: Fulkerson, Christopher');
+                alert('SITE: 10\n\nFulkerson, Christopher\n464 W. 900 S. Lot A\nCloverdale, IN 46120\n\n765-719-2295');
               }
 
               else if (
@@ -221,7 +394,7 @@
 
                 )
               {
-                alert('Site: 11\nInst: Boelens, Gary A.');
+                alert('SITE: 11\n\nBoelens, Gary A.\n1937 E. Lusitano Loop\nSan Tan Valley, AZ 85140\n\n602-799-3968');
               }
 
               else if (
@@ -236,7 +409,7 @@
                 || (added >= 184601 && added <= 184664)
                 )
               {
-                alert('Site: 12\nInst: NONE');
+                alert('SITE: 12\n\nInst: NONE');
               }
 
               else if (
@@ -246,7 +419,7 @@
                    (added >= 199501 && added <= 199695)
                 )
               {
-                alert('Site: 13\nInst: Wilcheck, Jeffery');
+                alert('SITE: 13\n\nWilcheck, Jeffery\nPO Box 111291\nAnchorage, AK 9951\n\n907-230-2869');
               }
 
               else if (
@@ -258,7 +431,7 @@
                 || (added >= 178600 && added <= 178899)
                 )
               {
-                alert('Site: 14\nInst: Christopherson, Jason');
+                alert('SITE: 14\n\nChristopherson, Jason\n1501 lawnmount Dr. #408\nRound Rock, TX 78664\n\n325-660-3647');
               }
 
               else if (
@@ -286,7 +459,7 @@
                 || (added >= 121901 && added <= 121930)
                 )
               {
-                alert('Site: 15\nInst: Beattie, George H.');
+                alert('SITE: 15\n\nBeattie, George H.\n917 Ridgewood Dr.\nNorthfield, NJ\n\n609-703-6814');
               }
 
               else if (
@@ -312,7 +485,7 @@
                 || (added >= 160950 && added <= 160950)
                 )
               {
-                alert('Site: 16\nInst: Engel, Gary');
+                alert('SITE: 16\n\nEngel, Gary\n401 Oneida St.\nLa Crosse, IN 46348\n\n219-477-7289');
               }
 
               else if (
@@ -326,7 +499,7 @@
                 || (added >= 154901 && added <= 154990)
                 )
               {
-                alert('Site: 17\nInst: Verkuilen, Mark T.');
+                alert('SITE: 17\n\nVerkuilen, Mark T.\n1225 E. Pauline St.\nAppleton, WI 54911\n\n920-739-4720');
               }
 
               else if (
@@ -340,7 +513,7 @@
                 || (added >= 113500 && added <= 113599)
                 )
               {
-                alert('Site: 18\nInst: Richards, Bruce M.');
+                alert('SITE: 18\n\nRichards, Bruce M.\n116 Laural Ln.\nBallston Spa, NY 12020\n\n518-309-4865');
               }
 
               else if (
@@ -350,7 +523,7 @@
                    (added >= 189000 && added <= 189199)
                 )
               {
-                alert('Site: 19\nInst: Van Rhyn, Jeffrey');
+                alert('SITE: 19\n\nVan Rhyn, Jeffrey\nPO Box 335129\nLas Vegas, NV 89033\n\n702-429-4097');
               }
 
 /*  NO 20 */
@@ -376,7 +549,7 @@
                 || (added >= 168791 && added <= 168791)
                 )
               {
-                alert('Site: 21\nInst: Engelke, Johhnie');
+                alert('SITE: 21\n\nEngelke, Johhnie\n16618 Bancroft\nOmaha, NE 68130\n\n832-216-4659');
               }
 
 /* NO 22 */
@@ -392,7 +565,7 @@
                 || (added >= 148007 && added <= 148288)
                 )
               {
-                alert('Site: 23\nInst: NONE');
+                alert('SITE: 23\n\nInst: NONE');
               }
 
               else if (
@@ -416,12 +589,12 @@
                 || (added >= 143901 && added <= 144805)
                 )
               {
-                alert('Site: 24\nInst: Coss, David M.');
+                alert('SITE: 24\n\nCoss, David M.\n3564 Western Reserve Rd.\nCanfield, OH 44406\n\n330-549-2782');
               }
 
               else if (
 
-                /* Site: 25\nInst: D&#8217;Iapico */
+                /* Site: 25\nInst: D'Iapico, Anthony */
 
                    (added >= 150001 && added <= 150174)
                 || (added >= 150201 && added <= 150278)
@@ -437,7 +610,7 @@
                 || (added >= 164632 && added <= 164679)
                 )
               {
-                alert("Site: 25\nInst: D'Iapico");
+                alert("SITE: 25\n\nD'Iapico, Anthony\n602 S. 6th Ave. W\nNewton, IA 50208\n\n515-321-4679");
               }
 
               else if (
@@ -456,7 +629,24 @@
                 || (added >= 149501 && added <= 149599)
                 )
               {
-                alert('Site: 26\nInst: NONE');
+                alert('SITE: 26\n\nInst: NONE');
+              }
+
+              else if (
+
+                /* Site: 27\nInst: Holbrook, Kevin */
+
+                   (added >= 143000 && added <= 143159)
+                || (added >= 143161 && added <= 143299)
+                || (added >= 143700 && added <= 143899)
+                || (added >= 144813 && added <= 144829)
+                || (added >= 144831 && added <= 144869)
+                || (added >= 144871 && added <= 144999)
+                || (added >= 145601 && added <= 145699)
+                || (added >= 145801 && added <= 145850)
+                )
+              {
+                alert('SITE: 27\n\nHolbrook, Kevin\n8921 Gerich Lilly Rd.\nWest Jefferson, OH 43162\n\n614-595-0736');
               }
 /* NO 28 */
               else if (
@@ -480,7 +670,7 @@
                 || (added >= 161101 && added <= 161132)
                 )
               {
-                alert('Site: 29\nInst: Scott, Jody');
+                alert('SITE: 29\n\nScott, Jody\nW4378 County Rd.\nRio, WI 53960\n\n920-992-3828');
               }
 
               else if (
@@ -490,7 +680,7 @@
                    (added >= 114000 && added <= 114799)
                 )
               {
-                alert('Site: 30\nInst: Slocum, George');
+                alert('SITE: 30\n\nSlocum, George\n45 Wallace Dr.\nOrchard Park, NY 14127\n\n716-982-1467');
               }
 
               else if (
@@ -502,7 +692,7 @@
                 || (added >= 114800 && added <= 114999)
                 )
               {
-                alert('Site: 31\nInst: Wilder, Bradly');
+                alert('SITE: 31\n\nWilder, Bradly\n12 Woodward Rd.\nNew Hartford, NY 13413\n\n315-383-8593');
               }
 
               else if (
@@ -519,7 +709,7 @@
                 || (added >= 112500 && added <= 112799)
                 )
               {
-                alert('Site: 32\nInst: Relyea, Darren J.');
+                alert('SITE: 32\n\nRelyea, Darren J.\n4 King Hill Rd.\nWalden, NY 12586\n\n845-546-4739');
               }
 
               else if (
@@ -547,7 +737,7 @@
                 || (added >= 193501 && added <= 193599)
                 )
               {
-                alert('Site: 33\nInst: Chaffee, Robert S.');
+                alert('SITE: 33\n\nChaffee, Robert S.\n17385 Grevillea St.\nFontana, CA 92335\n\n909-428-5215');
               }
 
               else if (
@@ -562,7 +752,7 @@
                 || (added >= 176300 && added <= 176300)
                 )
               {
-                alert('Site: 34\nInst: NONE');
+                alert('SITE: 34\n\nInst: NONE');
               }
 
               else if (
@@ -575,7 +765,7 @@
                 || (added >= 196100 && added <= 196199)
                 )
               {
-                alert('Site: 35\nInst: NONE');
+                alert('SITE: 35\n\nInst: NONE');
               }
 
               else if (
@@ -586,7 +776,7 @@
                 || (added >= 116801 && added <= 116882)
                 )
               {
-                alert('Site: 36\nInst: NONE');
+                alert('SITE: 36\n\nInst: NONE');
               }
 
               else if (
@@ -602,7 +792,7 @@
                 || (added >= 195301 && added <= 195389)
                 )
               {
-                alert('Site: 37\nInst: NONE');
+                alert('SITE: 37\n\nInst: NONE');
               }
 
               else if (
@@ -623,7 +813,7 @@
                 || (added >= 162601 && added <= 162796)
                 )  
               {
-                alert('Site: 38\nInst: Zurek, Michael');
+                alert('SITE: 38\n\nZurek, Michael\n2010 E. Laura Ave.\nWest Peoria, IL 61604\n\n309-678-6524');
               }
 
               else if (
@@ -639,7 +829,7 @@
                 || (added >= 161201 && added <= 161379)
                 )
               {
-                alert('Site: 39\nInst: Langley, Christopher');
+                alert('SITE: 39\n\nLangley, Christopher\n16730 E. 200th Street\nOrion, IL 61273\n\n563-529-9119');
               }
 
               else if (
@@ -662,7 +852,7 @@
                 || (added >= 139766 && added <= 139766)
                 )
               {
-                alert('Site: 40\nInst: Malin, David');
+                alert('SITE: 40\n\nMalin, David\n948 CR 195\nDanville, AL 35619\n\n256-509-1410');
               }
 
               else if (
@@ -681,7 +871,7 @@
                 || (added >= 106000 && added <= 106999)
                 )
               {
-                alert('Site: 41\nInst: Fitzpatrick, James');
+                alert('SITE: 41\n\nFitzpatrick, James\n146 Euclid Ave.\nWaterbury, CT 06710\n\n203-706-0879');
               }
 
               else if (
@@ -705,7 +895,7 @@
                 || (added >= 142339 && added <= 142339)
                 )
               {
-                alert('Site: 42\nInst: Vaugn, Kevin');
+                alert('SITE: 42\n\nVaugn, Kevin\n4945 Love Branch Rd.\nHampshire, TN 38461\n\n615-410-5193');
               }
 
               else
